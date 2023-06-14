@@ -2,16 +2,16 @@ import React from 'react';
 
 interface SubTitleProps {
     title: string;
-    isUnlock?: boolean
+    showBadge?: boolean
     className?: string
 }
 
-const SubTitle = ({ title = '', isUnlock, className = '' }: SubTitleProps) => {
+const SubTitle = ({ title = '', showBadge, className = '' }: SubTitleProps) => {
     return (
         <p className={className}>
             <span className="text-red-main text-11 font-bold">{title}</span>
-            {isUnlock && (
-                <span className="h-4 inline-block leading-none font-bold px-1 py-0.5 border border-red-main ml-1 rounded-[20px] text-10 bg-white">
+            {showBadge && (
+                <span className="h-4 inline-block leading-none font-bold px-1 py-0.5 border border-red-main ml-1 rounded-[20px] text-10 bg-white ml-2">
                     F1 UNLOCKED
                 </span>
             )}

@@ -1,3 +1,79 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Feature */
+.homepage--hero {
+    background-image: url(../assets/images/patterns/plus-x2.png);
+    background-repeat: repeat;
+    background-size: 8px;
+    padding-right: 0;
+    padding-top: 0;
+}
+.feature-link:hover p {
+    text-decoration: underline;
+}
+.sub-feature-link .flex-1::before {
+    content: '';
+    display: block;
+    height: 15px;
+    position: absolute;
+    right: -1px;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+}
+.sub-feature-link:hover div.border-gray-300 {
+    border-color: #e10600;
+}
+.sub-feature-link:hover picture {
+    transform: scale(1.1);
+}
+.sub-feature-link:hover div.absolute {
+    bottom: 10px;
+}
+.sub-feature-link:hover div.flex-1 {
+    margin-top: -10px;
+}
+.sub-feature-link:hover div.flex-1 p:last-child {
+    padding-bottom: 10px;
+}
+.sub-feature-link.theme-black:hover div.flex-1 {
+    background-color: #000;
+}
+.sub-feature-link.theme-black:hover div.flex-1::before {
+    background-color: #000;
+}
+.sub-feature-link.theme-black:hover div.absolute {
+    background-color: #000;
+}
+.sub-feature-link.theme-black:hover p:last-child {
+    color: #fff;
+}
+.hover-transition {
+    transition: margin .5s cubic-bezier(.2,0,.05,1),
+    bottom .5s cubic-bezier(.2,0,.05,1),
+    padding-bottom .5s cubic-bezier(.2,0,.05,1);
+    color: .5s cubic-bezier(.2,0,.05,1);
+    background-color: .5s cubic-bezier(.2,0,.05,1);
+}
+
+
+/* MoreNews section */
+.tags-pattern {
+    position: relative;
+    background-image: url(../assets/images/patterns/gray3-x1.png);
+    background-size: 30px;
+}
+@media (min-width: 768px) {
+    .tags-pattern:before {
+        content: '';
+        display: block;
+        background: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 40px;
+    }
+}

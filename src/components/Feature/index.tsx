@@ -2,6 +2,7 @@ import React from 'react';
 
 import SubTitle from 'components/shared/SubTitle';
 import Button from 'components/shared/Button';
+import CardItem from 'components/shared/CardItem';
 
 import TrailerImg from 'assets/images/image.jpg';
 import DriverImg from 'assets/images/feature/drivers.jpg';
@@ -26,11 +27,13 @@ const featureNews = [
     {
         type: 'TECHNICAL',
         src: TechTuesdayImg,
+        showBadge: true,
         desc: 'TECH TUESDAY: The secrets behind Red Bull’s floor design and how it differs to rival teams’',
     },
     {
         type: 'NEWS',
         src: RussellImg,
+        showBadge: true,
         desc: 'Mercedes predict where they’ll sit in the F1 pecking order in Canada after Spanish GP gains',
     },
     {
@@ -48,13 +51,13 @@ const featureNews = [
 
 const Feature = () => {
     return (
-        <section className='relative flex flex-col lg:flex-row z-10'>
-            <div className="flex-1 flex flex-col px-2.5">
-                <div className="lg:sticky top-20 border-t-[10px] border-r-[10px] rounded-tr-2xl border-red-main bg-white">
+        <section className='container mx-auto relative flex flex-col lg:flex-row z-10'>
+            <div className="flex-1 flex flex-col px-2.5 pb-5">
+                <div className="lg:sticky top-16 border-t-[10px] border-r-[10px] rounded-tr-2xl border-red-main bg-white">
                     <a href="#" className="feature-link mb-4 rounded-tr-xl">
                         <div className="mr-2.5">
                             <div className="py-2.5">
-                                <SubTitle title="FEATURE" isUnlock />
+                                <SubTitle title="FEATURE" showBadge />
                                 <p className="f1-bold text-[22px] leading-6 mb-2.5">
                                     EXCLUSIVE: Inside the making of Drive to
                                     Survive, its impact on F1 and what the
@@ -77,36 +80,14 @@ const Feature = () => {
                 <div className='hidden lg:block flex-1 homepage--hero border-r-[10px] border-red-main' />
             </div>
 
-            <div className='flex-1 px-2.5'>
+            <div className='flex-1 px-2.5 pb-2.5'>
                 <div className="grid grid-cols-2">
                     {featureNews.map((news, i) => (
-                        <a key={i} href="#" className="sub-feature-link flex flex-col px-2.5 pb-4">
-                            <div className="relative overflow-hidden">
-                                <picture className="block relative transition-transform delay-300">
-                                    <img
-                                        className="w-full"
-                                        loading="lazy"
-                                        src={news.src}
-                                        alt="Drivers guess their F1® 23 Game Ratings"
-                                    />
-                                </picture>
-                                {news.icon && (
-                                    <div className="absolute bottom-0 left-0 p-2.5 rounded-tr-2xl bg-white h-[38px]">
-                                        <i
-                                            className={`icon text-red-main text-lg leading-1 ${news.icon}`}
-                                        />
-                                    </div>
-                                )}
-                            </div>
-                            <div className="flex-1 relative z-10 p-[15px] pb-[35px] leading-[18px] bg-white border-b border-r rounded-br-2xl border-gray-300">
-                                <SubTitle title={news.type} className="mb-[5px]" />
-                                <p>{news.desc}</p>
-                            </div>
-                        </a>
+                        <CardItem key={i} {...news} />
                     ))}
                 </div>
 
-                <Button />
+                <Button className='text-center lg:text-left my-2.5' />
             </div>
         </section>
     );
