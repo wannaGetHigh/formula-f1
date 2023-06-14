@@ -16,7 +16,15 @@
 .icon-user:before {
     content: '\e900';
 }
-
 .icon-burger::before {
     content: "\e909"
+}
+.icon-play:before {
+    content: "\e907"
+}
+.icon-chevron-right:before {
+    content: "\e914";
+}
+.icon-audio:before {
+    content: "\e902";
 }

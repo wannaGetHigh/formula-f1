@@ -1,7 +1,17 @@
+import Feature from 'components/Feature';
+import Header from 'components/Header';
 import React from 'react';
 
 function App() {
-    return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+    return (
+        <>
+            <Header />
+
+            <main className='relative mt-24'>
+                <Feature />
+            </main>
+        </>
+    );
 }
 
 export default App;
