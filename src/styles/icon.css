@@ -28,3 +28,6 @@
 .icon-audio:before {
     content: "\e902";
 }
+.icon-calendar:before {
+    content: "\e929";
+}

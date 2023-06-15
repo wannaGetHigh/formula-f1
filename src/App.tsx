@@ -4,6 +4,7 @@ import Feature from 'components/Feature';
 import Header from 'components/Header';
 import EditorPick from 'components/EditorPick';
 import MoreNews from 'components/MoreNews';
+import RaceCalender from 'components/RaceCalender';
 
 function App() {
     return (
@@ -16,6 +17,8 @@ function App() {
                 <EditorPick />
 
                 <MoreNews />
+
+                <RaceCalender />
             </main>
         </>
     );

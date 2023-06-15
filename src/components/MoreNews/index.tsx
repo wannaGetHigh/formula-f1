@@ -46,7 +46,7 @@ const MoreNews = () => {
                 <div className="mb-5 border-b-[10px] border-black mx-2.5" />
             </div>
             <div className="tags-pattern">
-                <div className="container mx-auto grid grid-cols-2">
+                <div className="container mx-auto grid grid-cols-2 lg:grid-cols-4">
                     {newsList.map((news, i) => (
                         <CardItem
                             key={i}

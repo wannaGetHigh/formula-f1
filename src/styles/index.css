@@ -77,3 +77,148 @@
         height: 40px;
     }
 }
+
+
+/* Race calender section */
+.calender-container {
+    background-color: #15151E;
+    height: 570px;
+}
+.calender-card {
+    min-width: 120px;
+    cursor: pointer;
+}
+.calender-card.open {
+    width: 280px;
+}
+.calender-card:hover h3 {
+    color: #fff
+}
+.rolex-logo {
+    background-image: url(../assets//images/\/rolex.png);
+    background-size: 95% 95%;
+    color: transparent;
+    height: 45px;
+    width: 58px;
+}
+.slideToTop-animate {
+    transform: translateY(100%);
+    opacity: 0;
+    animation: slideToTop 1s linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.fadeOut-animate {
+    animation: fadeOut 1s linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.fadeIn-animate {
+    opacity: 0;
+    animation: fadeIn 1s linear 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    25% {
+        transform: translateY(25%);
+        opacity: 75%;
+    }
+    50% {
+        transform: translateY(50%);
+        opacity: 50%;
+    }
+    75% {
+        transform: translateY(75%);
+        opacity: 25%;
+    }
+    100% {
+        transform: translateY(100%);
+        opacity: 0%;
+        display: none;
+    }
+}
+@keyframes slideToTop {
+    0% {
+        transform: translateY(100%);
+        opacity: 0%;
+    }
+    25% {
+        transform: translateY(75%);
+        opacity: 25%;
+    }
+    50% {
+        transform: translateY(50%);
+        opacity: 50%;
+    }
+    75% {
+        transform: translateY(25%);
+        opacity: 75%;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 100%;
+    }
+}
+@keyframes slideToTop {
+    25% {
+        transform: translateY(112.5px);
+    }
+    50% {
+        transform: translateY(75px);
+    }
+    75% {
+        transform: translateY(37.5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes fadeIn {
+    25% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    .calender-container {
+        height: 670px;
+    }
+    .calender-card.open {
+        width: 462px;
+    }
+    .rolex-logo {
+        background-size: 95% 95%;
+        color: transparent;
+        height: 78px;
+        width: 100px;
+    }
+    
+    .calender-country {
+        min-height: 70px;
+    }
+}
+@media (min-width: 1024px) {
+    .calender-container {
+        height: 580px;
+    }
+    .calender-card.open {
+        width: 695px;
+    }
+}
+
+@media (min-width: 1360) {
+    .calender-card.open {
+        max-width: 659px;
+    }
+}
