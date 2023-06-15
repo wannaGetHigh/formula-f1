@@ -64,7 +64,7 @@ const CalenderArticle = ({
             className={`calender-card ${show ? 'open' : 'close'} flex-none my-5 border-r border-b rounded-br-2xl border-[#38383f] text-center transition-all duration-500`}
             onClick={() => setShow(!show)}
         >
-            <div className='calender-preview'>
+            <div className={`calender-preview ${!show ? 'mt-[150px]' : ''}`}>
                 <div className={`calender-country flex ${show ? 'flex-row' : 'flex-col'} md:flex-col items-center gap-2 md:gap-1 px-[15px] md:px-0`}>
                     <img
                         src={image}

@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 /* Feature */
+.button-main:hover i.icon {
+    color: #e10600;
+}
 .homepage--hero {
     background-image: url(../assets/images/patterns/plus-x2.png);
     background-repeat: repeat;
@@ -78,14 +81,13 @@
     }
 }
 
-
 /* Race calender section */
 .calender-container {
     background-color: #15151E;
     height: 570px;
 }
 .calender-card {
-    min-width: 120px;
+    min-width: 145px;
     cursor: pointer;
 }
 .calender-card.open {
@@ -190,6 +192,69 @@
     }
 }
 
+/* Billboard section */
+.tab-item {
+    position: relative;
+    margin: 0 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.tab-item::before {
+    content: '';
+    border-left: 1px solid #d0d0d2;
+    height: 20px;
+    position: absolute;
+    left: -50%;
+    top: 50%;
+    margin-top: -10px;
+}
+.tab-item:first-child::before {
+    border-left: 0;
+}
+.tab-item.active.tab-item::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 3px;
+    background-color: #e10600;
+}
+.tab-item:hover.tab-item::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 3px;
+    background-color: #e10600;
+}
+.billboard-container::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 270px;
+    background: url(../assets/images/bg-billboard.png) no-repeat center bottom #f3f3f3;
+    background-size: cover;
+}
+.icon-position {
+    position: absolute;
+    top: -15px;
+    left: 15px;
+    font-size: 90px;
+}
+.toplist-item:hover {
+    color: #fff;
+    background-color: #38383f;
+}
+.toplist-item:hover i.icon {
+    color: #fff;
+}
+
 @media (min-width: 768px) {
     .calender-container {
         height: 670px;
@@ -203,9 +268,14 @@
         height: 78px;
         width: 100px;
     }
-    
     .calender-country {
         min-height: 70px;
+    }
+    .billboard-container::before {
+        height: 335px;
+    }
+    .tab-item {
+        margin: 0 60px;
     }
 }
 @media (min-width: 1024px) {

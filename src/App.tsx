@@ -5,6 +5,7 @@ import Header from 'components/Header';
 import EditorPick from 'components/EditorPick';
 import MoreNews from 'components/MoreNews';
 import RaceCalender from 'components/RaceCalender';
+import BillBoard from 'components/BillBoard';
 
 function App() {
     return (
@@ -19,6 +20,8 @@ function App() {
                 <MoreNews />
 
                 <RaceCalender />
+
+                <BillBoard />
             </main>
         </>
     );

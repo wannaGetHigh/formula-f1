@@ -87,7 +87,7 @@ const Feature = () => {
                     ))}
                 </div>
 
-                <Button className='text-center lg:text-left my-2.5' />
+                <Button className='text-center lg:text-left my-2.5'>View Latest News</Button>
             </div>
         </section>
     );

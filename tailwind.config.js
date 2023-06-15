@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       colors: {
         'red-main': '#e10600',
-        'black-15': '#15151e',
+        'black-carbon': '#15151e',
       },
       fontSize: {
         '10': '0.625rem',

@@ -12,12 +12,21 @@ body {
     src: url('../assets/font/f1-Bold.woff2');
 }
 
+@font-face {
+    font-family: f1-wide;
+    src: url('../assets/font/f1-Wide.woff2');
+}
+
 .f1 {
     font-family: f1, sans-serif;
 }
 
 .f1-bold {
     font-family: f1-bold, sans-serif;
+}
+
+.f1-wide {
+    font-family: f1-wide, sans-serif;
 }
 
 @media (min-width: 576px) {

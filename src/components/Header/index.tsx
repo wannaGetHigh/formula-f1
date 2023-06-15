@@ -11,7 +11,7 @@ const Header = () => {
                 <img src='../../assets/icon/f1_logo.svg' alt='Logo' />
             </div>
 
-            <button className='text-white bg-black-15 rounded my-2.5 mx-[15px]'>
+            <button className='text-white bg-black-carbon rounded my-2.5 mx-[15px]'>
                 <a href='#' className='px-2.5 py-[5px]'>
                     <i className='icon icon-user text-2xl' />
                 </a>
