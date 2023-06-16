@@ -195,7 +195,7 @@
 /* Billboard section */
 .tab-item {
     position: relative;
-    margin: 0 10px;
+    margin: 0 28px;
     cursor: pointer;
     text-transform: uppercase;
 }
@@ -204,7 +204,7 @@
     border-left: 1px solid #d0d0d2;
     height: 20px;
     position: absolute;
-    left: -50%;
+    left: -24%;
     top: 50%;
     margin-top: -10px;
 }
@@ -271,11 +271,11 @@
     .calender-country {
         min-height: 70px;
     }
-    .billboard-container::before {
-        height: 335px;
-    }
     .tab-item {
         margin: 0 60px;
+    }
+    .tab-item::before {
+        left: -50%;
     }
 }
 @media (min-width: 1024px) {
@@ -284,6 +284,9 @@
     }
     .calender-card.open {
         width: 695px;
+    }
+    .billboard-container::before {
+        height: 335px;
     }
 }
 

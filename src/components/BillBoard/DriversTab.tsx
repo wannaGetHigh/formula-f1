@@ -17,6 +17,7 @@ const driverList = [
         flag: MexicoImg,
         country: 'Mexico',
         avatar: PerezImg,
+        href: '#',
     },
     {
         name: 'Max',
@@ -26,6 +27,7 @@ const driverList = [
         flag: NetherLandImg,
         country: 'Mexico',
         avatar: VerstappenImg,
+        href: '#',
     },
     {
         name: 'Fernando',
@@ -35,6 +37,7 @@ const driverList = [
         flag: SpainImg,
         country: 'Spain',
         avatar: AlonsoImg,
+        href: '#',
     },
 ];
 
@@ -46,6 +49,7 @@ const topTenList = [
         color: '#3671C6',
         point: '117',
         sponsor: 'Red Bull Racing',
+        href: '#',
     },
     {
         name: 'Sergio',
@@ -54,6 +58,7 @@ const topTenList = [
         color: '#3671C6',
         point: '117',
         sponsor: 'Red Bull Racing',
+        href: '#',
     },
     {
         name: 'Fernando',
@@ -62,6 +67,7 @@ const topTenList = [
         color: '#358C75',
         point: '99',
         sponsor: 'Aston Martin',
+        href: '#',
     },
     {
         name: 'Lewis',
@@ -70,6 +76,7 @@ const topTenList = [
         color: '#6CD3BF',
         point: '87',
         sponsor: 'Mercedes',
+        href: '#',
     },
     {
         name: 'George',
@@ -78,6 +85,7 @@ const topTenList = [
         color: '#6CD3BF',
         point: '65',
         sponsor: 'Mercedes',
+        href: '#',
     },
     {
         name: 'Carlos',
@@ -86,6 +94,7 @@ const topTenList = [
         color: '#F91536',
         point: '58',
         sponsor: 'Ferrari',
+        href: '#',
     },
     {
         name: 'Charles',
@@ -94,6 +103,7 @@ const topTenList = [
         color: '#F91536',
         point: '42',
         sponsor: 'Ferrari',
+        href: '#',
     },
     {
         name: 'Lance',
@@ -102,6 +112,7 @@ const topTenList = [
         color: '#358C75',
         point: '35',
         sponsor: 'Aston Martin',
+        href: '#',
     },
     {
         name: 'Esteban',
@@ -110,6 +121,7 @@ const topTenList = [
         color: '#2293D1',
         point: '25',
         sponsor: 'Alpine',
+        href: '#',
     },
     {
         name: 'Pierre',
@@ -118,17 +130,19 @@ const topTenList = [
         color: '#2293D1',
         point: '25',
         sponsor: 'Alpine',
+        href: '#',
     },
 ];
 
 const DriversTab = () => {
     return (
         <>
-            <div className="mt-28 xl:mt-40 flex items-end gap-2.5 xl:w-5/6 px-2.5 mx-auto">
+            <h3 className='text-wide f1-wide text-[25px] leading-[30px] mb-5 mt-[30px] md:mt-[50px] text-white text-center'>Driver Standings</h3>
+            <div className="mt-28 xl:mt-40 flex justify-center items-end gap-2.5 xl:w-5/6 px-2.5 mx-auto">
                 {driverList.map((driver) => (
                     <a
                         key={driver.pos}
-                        href="#"
+                        href={driver.href}
                         className={`${
                             driver.pos === '1'
                                 ? 'w-full md:w-1/3'
@@ -153,6 +167,7 @@ const DriversTab = () => {
                                 className="absolute right-0 md:left-0 bottom-0 w-[290px] md:w-auto"
                                 src={driver.avatar}
                                 alt={driver.name}
+                                loading='lazy'
                             />
                         </div>
                         <div className="hidden md:block bg-[#38383f] text-white leading-4 p-[25px] rounded-bl-2xl rounded-br-2xl">
@@ -172,10 +187,10 @@ const DriversTab = () => {
                 ))}
             </div>
 
-            <div className="xl:w-5/6 mx-auto p-2.5 mt-2.5">
+            <div className="xl:w-5/6 mx-auto p-2.5 -mt-2.5 md:mt-2.5">
                 {topTenList.map((item) => (
                     <a
-                        href="#"
+                        href={item.href}
                         key={item.pos}
                         className="toplist-item bg-white rounded-[5px] mb-0.5 flex gap-2 items-center py-[15px] pl-5 pr-2.5 text-black-carbon text-sm transition-color duration-200"
                     >
@@ -201,7 +216,7 @@ const DriversTab = () => {
             </div>
 
             <div className='flex items-center justify-center mt-2.5 mb-5'>
-                <Button>VIEW FULL STANDINGS</Button>
+                <Button href='#'>VIEW FULL STANDINGS</Button>
             </div>
         </>
     );

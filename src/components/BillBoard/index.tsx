@@ -1,20 +1,24 @@
 import React, { useState } from 'react';
+
 import DriversTab from './DriversTab';
+import { CONSTRUCTOR, DRIVER, LAST_RACE } from 'constant';
+import ConstructorTab from './ConstructorTab';
+import LastRaceTab from './LastRaceTab';
 
 const tabs = [
     {
-        name: 'driver',
+        name: DRIVER,
     },
     {
-        name: 'constructor',
+        name: CONSTRUCTOR,
     },
     {
-        name: 'last race',
+        name: LAST_RACE,
     },
 ];
 
 const BillBoard = () => {
-    const [tab, setTab] = useState('driver');
+    const [tab, setTab] = useState(DRIVER);
 
     return (
         <div>
@@ -33,10 +37,15 @@ const BillBoard = () => {
             </div>
             <div className='billboard-container relative bg-[#f3f3f3] py-5'>
                 <div className='container mx-auto relative px-2.5'>
-                    <h3 className='text-wide f1-wide text-[25px] leading-[30px] mb-5 mt-[30px] text-white text-center'>Driver Standings</h3>
                     <div className='m-2.5 px-2.5'>
-                        {tab === 'driver' && (
+                        {tab === DRIVER && (
                             <DriversTab />
+                        )}
+                        {tab === CONSTRUCTOR && (
+                            <ConstructorTab />
+                        )}
+                        {tab === LAST_RACE && (
+                            <LastRaceTab />
                         )}
                     </div>
                 </div>

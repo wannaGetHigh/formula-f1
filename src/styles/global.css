@@ -1,5 +1,7 @@
 body {
     font-family: 'Titillium Web', sans-serif;
+    line-height: 23px;
+    letter-spacing: .2px;
 }
 
 @font-face {
@@ -17,6 +19,11 @@ body {
     src: url('../assets/font/f1-Wide.woff2');
 }
 
+@font-face {
+    font-family: f1-black;
+    src: url('../assets/font/f1-Black.woff2');
+}
+
 .f1 {
     font-family: f1, sans-serif;
 }
@@ -27,6 +34,10 @@ body {
 
 .f1-wide {
     font-family: f1-wide, sans-serif;
+}
+
+.f1-black {
+    font-family: f1-black, sans-serif;
 }
 
 @media (min-width: 576px) {
