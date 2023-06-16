@@ -21,7 +21,7 @@ const BillBoard = () => {
     const [tab, setTab] = useState(DRIVER);
 
     return (
-        <div>
+        <section>
             <div className="container mx-auto flex justify-center items-center text-sm text-black-carbon tracking-wide text-center f1">
                 {tabs.map((item) => (
                     <div
@@ -50,7 +50,7 @@ const BillBoard = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

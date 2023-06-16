@@ -197,14 +197,14 @@ const raceCalenderList = [
 
 const RaceCalender = () => {
     return (
-        <div className="calender-container mt-10">
+        <section className="calender-container mt-10">
             <div className="flex overflow-x-auto h-full">
                 {raceCalenderList.map((race, i) => (
                     <CalenderArticle key={i} {...race} />
                 ))}
                 <div className="my-5 border-r border-b rounded-br-2xl border-[#38383f] text-center min-w-[120px]" />
             </div>
-        </div>
+        </section>
     );
 };
 

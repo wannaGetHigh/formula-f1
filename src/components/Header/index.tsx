@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <div className='fixed top-0 right-0 left-0 flex gap-2 items-center h-[52px] bg-red-main z-20'>
+        <header className='fixed top-0 right-0 left-0 flex gap-2 items-center h-[52px] bg-red-main z-20'>
             <button className='w-[76px] h-full text-white'>
                 <i className='icon icon-burger text-2xl' />
             </button>
@@ -16,7 +16,7 @@ const Header = () => {
                     <i className='icon icon-user text-2xl' />
                 </a>
             </button>
-        </div>
+        </header>
     );
 };
 

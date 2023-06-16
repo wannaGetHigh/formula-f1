@@ -6,6 +6,9 @@ import EditorPick from 'components/EditorPick';
 import MoreNews from 'components/MoreNews';
 import RaceCalender from 'components/RaceCalender';
 import BillBoard from 'components/BillBoard';
+import Store from 'components/Store';
+import Topic from 'components/Topic';
+import Footer from 'components/Fotter';
 
 function App() {
     return (
@@ -22,7 +25,13 @@ function App() {
                 <RaceCalender />
 
                 <BillBoard />
+
+                <Store />
+
+                <Topic />
             </main>
+
+            <Footer />
         </>
     );
 }

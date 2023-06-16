@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         'red-main': '#e10600',
         'black-carbon': '#15151e',
+        'black-tuna': '#38383f',
       },
       fontSize: {
         '10': '0.625rem',
@@ -17,6 +18,9 @@ module.exports = {
       },
       lineHeight: {
         '0': '0'
+      },
+      borderWidth: {
+        '2.5': '10px'
       }
     },
   },

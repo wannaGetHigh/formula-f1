@@ -32,8 +32,9 @@ const editorPickList = [
 
 const EditorPick = () => {
     return (
-        <div className="container py-10 mx-auto">
-            <div className="flex flex-col lg:flex-row p-5 pl-0 border-[10px] border-l-0 border-red-main rounded-tr-2xl rounded-br-2xl">
+        <section className="container py-10 mx-auto">
+            <div className="relative flex flex-col lg:flex-row p-5 pl-0 border-[10px] border-l-0 border-red-main rounded-tr-2xl rounded-br-2xl">
+                <h5 className='absolute -top-5 left-0 f1-bold text-xl bg-white pl-2 pr-5'>Editor's Picks</h5>
                 <CardItem
                     type="VIDEO"
                     desc="WATCH: F1 for beginners – Everything you need to know about F1"
@@ -47,7 +48,7 @@ const EditorPick = () => {
                     ))}
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

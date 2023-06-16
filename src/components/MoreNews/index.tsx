@@ -34,7 +34,7 @@ const newsList = [
 
 const MoreNews = () => {
     return (
-        <div className="my-5">
+        <section className="my-5">
             <div className="container mx-auto">
                 <h2 className="text-[25px] f1-bold hover:text-red-main mb-5 px-2.5">
                     <a href="#">
@@ -57,7 +57,7 @@ const MoreNews = () => {
                     ))}
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

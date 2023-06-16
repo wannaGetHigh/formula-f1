@@ -40,3 +40,15 @@
 .icon-slash-3:before {
     content: "\e91a";
 }
+.icon-facebook:before {
+    content: "\e912";
+}
+.icon-twitter:before {
+    content: "\e910";
+}
+.icon-instagram:before {
+    content: "\ea92";
+}
+.icon-youtube:before {
+    content: "\ea9d";
+}
