@@ -54,13 +54,12 @@
     color: #fff;
 }
 .hover-transition {
-    transition: margin .5s cubic-bezier(.2,0,.05,1),
-    bottom .5s cubic-bezier(.2,0,.05,1),
-    padding-bottom .5s cubic-bezier(.2,0,.05,1);
-    color: .5s cubic-bezier(.2,0,.05,1);
-    background-color: .5s cubic-bezier(.2,0,.05,1);
+    transition: margin 0.5s cubic-bezier(0.2, 0, 0.05, 1),
+        bottom 0.5s cubic-bezier(0.2, 0, 0.05, 1),
+        padding-bottom 0.5s cubic-bezier(0.2, 0, 0.05, 1);
+    color: 0.5s cubic-bezier(0.2, 0, 0.05, 1);
+    background-color: 0.5s cubic-bezier(0.2, 0, 0.05, 1);
 }
-
 
 /* MoreNews section */
 .tags-pattern {
@@ -83,7 +82,7 @@
 
 /* Race calender section */
 .calender-container {
-    background-color: #15151E;
+    background-color: #15151e;
     height: 570px;
 }
 .calender-card {
@@ -94,7 +93,7 @@
     width: 280px;
 }
 .calender-card:hover h3 {
-    color: #fff
+    color: #fff;
 }
 .rolex-logo {
     background-image: url(../assets//images/\/rolex.png);
@@ -233,12 +232,13 @@
 }
 .billboard-container::before {
     position: absolute;
-    content: "";
+    content: '';
     left: 0;
     top: 0;
     width: 100%;
     height: 270px;
-    background: url(../assets/images/bg-billboard.png) no-repeat center bottom #f3f3f3;
+    background: url(../assets/images/bg-billboard.png) no-repeat center bottom
+        #f3f3f3;
     background-size: cover;
 }
 .icon-position {
@@ -255,7 +255,6 @@
     color: #fff;
 }
 
-
 /* Store section */
 .link-card {
     background-image: url(../assets/images/patterns/white-stripe.png);
@@ -271,7 +270,7 @@
     content: '';
     display: block;
     background-color: rgb(0, 0, 0, 0.3);
-    transition: background-color .5s cubic-bezier(.2,0,.05,1);
+    transition: background-color 0.5s cubic-bezier(0.2, 0, 0.05, 1);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -288,7 +287,7 @@
     display: block;
     background-image: url(../assets/images/patterns/white-x1.png);
     background-size: 12px;
-    transition: all .5s cubic-bezier(.2,0,.05,1);
+    transition: all 0.5s cubic-bezier(0.2, 0, 0.05, 1);
     height: 10px;
     position: absolute;
     bottom: 0;
@@ -300,14 +299,14 @@
 }
 
 /* Footer section */
-.footer-nav:hover .relative::after {
+.navigate-item:hover .relative::after {
     content: '';
     display: block;
     position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
-    height: 2px;
+    height: 3px;
     background-color: #e10600;
 }
 .footer-title:hover i.icon-chevron-right {
@@ -315,6 +314,124 @@
 }
 svg.footer-logo path {
     fill: #e10600;
+}
+.st0 {
+    fill: #a6a6a6;
+}
+.st1 {
+    stroke: #fff;
+    stroke-width: 0.2;
+    stroke-miterlimit: 10;
+}
+.st1,
+.st2 {
+    fill: #fff;
+}
+.st3 {
+    fill: url(#SVGID_1_);
+}
+.st4 {
+    fill: url(#SVGID_2_);
+}
+.st5 {
+    fill: url(#SVGID_3_);
+}
+.st6 {
+    fill: url(#SVGID_4_);
+}
+.st7,
+.st8,
+.st9 {
+    opacity: 0.2;
+    enable-background: new;
+}
+.st8,
+.st9 {
+    opacity: 0.12;
+}
+.st9 {
+    opacity: 0.25;
+    fill: #fff;
+}
+
+/* Header section */
+.institution-links li.active::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    right: 50%;
+    transform: translateX(50%);
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 6px solid #e10600;
+}
+.sub-header li {
+    background-color: #e10600;
+    transition: background-color .3s ease-out;
+}
+.sub-header li:hover {
+    background-color: #15151e;
+}
+.second-nav {
+    display: none;
+    background: #15151e;
+    position: absolute;
+    left: 0;
+    z-index: 101;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 2px 0 0 rgba(0,0,0,.2);
+    border-bottom: 1px solid #e10600;
+    transition: background-color .3s ease-out;
+}
+.second-nav-item:hover::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 3px;
+    background-color: #e10600;
+}
+.expandable:hover .second-nav {
+    display: block;
+}
+
+/* Second nav schedule section */
+.schedule-item:hover img {
+    transform: scale(1.1);
+}
+.schedule-item:hover .rounded-br-\[10px\] {
+    border-color: #e10600;
+}
+.schedule-item:hover i.icon-chevron-right {
+    color: #e10600;
+}
+
+/* Second nav driver section */
+.driver-item:hover {
+    border-color: var(--driver-color);
+}
+
+/* Second nav teams section */
+.team-item {
+    max-width: 175px;
+}
+.team-item .relative::before {
+    content: '';
+    position: absolute;
+    top: 22px;
+    left: 0;
+    display: inline-block;
+    background-color: var(--team-color);
+    width: 50px;
+    height: 19px;
+    z-index: -1;
+}
+.team-container:hover {
+    border-color: var(--team-color);
 }
 
 @media (min-width: 768px) {
@@ -349,6 +466,9 @@ svg.footer-logo path {
     }
     .billboard-container::before {
         height: 335px;
+    }
+    .header-container {
+        max-width: 1320px;
     }
 }
 

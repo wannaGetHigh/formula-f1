@@ -61,7 +61,7 @@ const CalenderArticle = ({
 
     return (
         <article
-            className={`calender-card ${show ? 'open' : 'close'} flex-none my-5 border-r border-b rounded-br-2xl border-[#38383f] text-center transition-all duration-500`}
+            className={`calender-card ${show ? 'open' : 'close'} flex-none my-5 border-r border-b rounded-br-2xl border-black-tuna text-center transition-all duration-500`}
             onClick={() => setShow(!show)}
         >
             <div className={`calender-preview ${!show ? 'mt-[150px]' : ''}`}>

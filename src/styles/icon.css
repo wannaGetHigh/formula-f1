@@ -13,42 +13,45 @@
     -webkit-font-smoothing: antialiased;
 }
 
-.icon-user:before {
+.icon-user::before {
     content: '\e900';
 }
 .icon-burger::before {
     content: "\e909"
 }
-.icon-play:before {
+.icon-play::before {
     content: "\e907"
 }
-.icon-chevron-right:before {
+.icon-chevron-right::before {
     content: "\e914";
 }
-.icon-audio:before {
+.icon-audio::before {
     content: "\e902";
 }
-.icon-calendar:before {
+.icon-calendar::before {
     content: "\e929";
 }
-.icon-slash-1:before {
+.icon-slash-1::before {
     content: "\e91b";
 }
-.icon-slash-2:before {
+.icon-slash-2::before {
     content: "\e919";
 }
-.icon-slash-3:before {
+.icon-slash-3::before {
     content: "\e91a";
 }
-.icon-facebook:before {
+.icon-facebook::before {
     content: "\e912";
 }
-.icon-twitter:before {
+.icon-twitter::before {
     content: "\e910";
 }
-.icon-instagram:before {
+.icon-instagram::before {
     content: "\ea92";
 }
-.icon-youtube:before {
+.icon-youtube::before {
     content: "\ea9d";
+}
+.icon-chevron-down::before {
+    content: "\e903";
 }

@@ -111,7 +111,7 @@ const LastRaceTab = () => {
                     <a
                         href={item.href}
                         key={item.pos}
-                        className="toplist-item bg-white rounded-[5px] mb-0.5 flex gap-2 items-center py-[15px] pl-5 pr-2.5 text-black-carbon text-sm transition-color duration-200"
+                        className="toplist-item bg-white rounded-[5px] mb-0.5 flex gap-2 items-center py-[15px] pl-5 pr-2.5 text-black-carbon text-sm transition-colors duration-200"
                     >
                         <span className="f1-bold w-5 text-end">{item.pos}</span>
                         <span className='w-1 h-[14px]' style={{ backgroundColor: item.color }} />
@@ -121,7 +121,7 @@ const LastRaceTab = () => {
                                 {item.surName}
                             </span>
                         </p>
-                        <span className="hidden md:block text-13 text-[#67676d]">
+                        <span className="hidden md:block text-13 text-gray-mid">
                             {item.sponsor}
                         </span>
                         <div className="flex-1 text-end">

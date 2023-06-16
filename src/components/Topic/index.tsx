@@ -30,15 +30,16 @@ const topicList = [
 
 const Topic = () => {
     return (
-        <section className="bg-[#38383f] py-10">
+        <section className="bg-black-tuna py-10">
             <div className="container mx-auto">
                 <div className="relative flex flex-col pt-2.5 -mb-2.5 lg:flex-row border-t-[10px] border-r-[10px] border-black-carbon rounded-tr-2xl">
-                    <h5 className="absolute -top-5 left-0 f1-bold text-xl bg-[#38383f] text-white pl-2 pr-5">
+                    <h5 className="absolute -top-5 left-0 f1-bold text-xl bg-black-tuna text-white pl-2 pr-5">
                         Explore F1 topics
                     </h5>
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 pr-2.5 -mb-2.5">
                         {topicList.map((topic) => (
                             <a
+                                key={topic.title}
                                 href={topic.href}
                                 className="m-2.5 rounded-tr-2xl rounded-tl-2xl overflow-hidden"
                             >

@@ -202,7 +202,7 @@ const RaceCalender = () => {
                 {raceCalenderList.map((race, i) => (
                     <CalenderArticle key={i} {...race} />
                 ))}
-                <div className="my-5 border-r border-b rounded-br-2xl border-[#38383f] text-center min-w-[120px]" />
+                <div className="my-5 border-r border-b rounded-br-2xl border-black-tuna text-center min-w-[120px]" />
             </div>
         </section>
     );

@@ -1,4 +1,4 @@
-import { LogoIcon } from 'assets/icon';
+import { AppleStoreIcon, GooglePlayIcon, LogoIcon } from 'assets/icon';
 import React from 'react';
 
 const socialMediaList = [
@@ -98,21 +98,22 @@ const Footer = () => {
     return (
         <footer className="bg-black-carbon text-white  pt-0.5">
             <div className="bg-black-tuna">
-                <div className="container mx-auto flex justify-between items-center p-2.5 mb-[35px]">
+                <div className="container mx-auto flex justify-between items-center gap-2 p-2.5 mb-[35px]">
                     <div className="flex gap-2 items-center">
                         <h5 className="text-13 max-w-[105px] leading-none">
                             DOWNLOAD THE OFFICIAL F1 APP
                         </h5>
-                        <a className="w-[135px] h-10" href="#">
-                            <img src="" alt="Google Play" />
+                        <a href="#">
+                            <AppleStoreIcon width={135} height={40} />
                         </a>
-                        <a className="w-[135px] h-10" href="#">
-                            <img src="" alt="Apple Store" />
+                        <a href="#">
+                            <GooglePlayIcon width={135} height={40} />
                         </a>
                     </div>
                     <div className="flex gap-2 items-center">
                         {socialMediaList.map((media) => (
                             <a
+                                key={media.icon}
                                 href={media.href}
                                 target="_blank"
                                 rel="noreferrer"
@@ -144,7 +145,7 @@ const Footer = () => {
                             <li className='mb-2'>
                                 <a
                                     href={nav.title.href}
-                                    className="block footer-nav f1-bold py-1"
+                                    className="block navigate-item f1-bold py-1"
                                 >
                                     <span className="relative">
                                         {nav.title.name}
@@ -153,10 +154,10 @@ const Footer = () => {
                             </li>
                             <ul>
                                 {nav.nav.map((item) => (
-                                    <li>
+                                    <li key={item.name}>
                                         <a
                                             href={item.href}
-                                            className="footer-nav block py-1 text-xs"
+                                            className="navigate-item block py-1 text-xs"
                                         >
                                             <span className="relative">
                                                 {item.name}
@@ -172,14 +173,14 @@ const Footer = () => {
                 <ul className="mt-2.5 flex flex-wrap gap-x-2.5 md:gap-x-5 lg:gap-x-10 mr-10">
                     {contactList.map(contact => (
                         <li key={contact.name}>
-                            <a href={contact.href} className='block footer-nav py-1 leading-6 text-xs font-bold'>
+                            <a href={contact.href} className='block navigate-item py-1 leading-6 text-xs font-bold'>
                                 <span className='relative'>{contact.name}</span>
                             </a>
                         </li>
                     ))}
                 </ul>
 
-                <div className='flex justify-between items-center gap-5 mt-2.5 py-2.5 border-t border-[#38383f]'>
+                <div className='flex justify-between items-center gap-5 mt-2.5 py-2.5 border-t border-black-tuna'>
                     <a href='#' className='w-20'>
                         <LogoIcon width={84} height={21} />
                     </a>

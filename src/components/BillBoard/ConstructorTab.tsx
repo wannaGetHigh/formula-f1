@@ -193,7 +193,7 @@ const ConstructorTab = () => {
                     <a
                         href={item.href}
                         key={item.pos}
-                        className="toplist-item bg-white rounded-[5px] mb-0.5 flex gap-2 items-center py-[15px] pl-5 pr-2.5 text-black-carbon text-sm transition-color duration-200"
+                        className="toplist-item bg-white rounded-[5px] mb-0.5 flex gap-2 items-center py-[15px] pl-5 pr-2.5 text-black-carbon text-sm transition-colors duration-200"
                     >
                         <span className="f1-bold w-5 text-end">{item.pos}</span>
                         <span
@@ -201,7 +201,7 @@ const ConstructorTab = () => {
                             style={{ backgroundColor: item.color }}
                         />
                         <p className="f1-bold text-sm">{item.name}</p>
-                        <span className="text-13 text-[#67676d] hidden md:block">
+                        <span className="text-13 text-gray-mid hidden md:block">
                             {item.driver2 ? `${item.driver1} /` : item.driver1}
                             {item.driver2}
                         </span>

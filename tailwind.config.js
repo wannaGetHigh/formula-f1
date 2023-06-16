@@ -9,6 +9,8 @@ module.exports = {
         'red-main': '#e10600',
         'black-carbon': '#15151e',
         'black-tuna': '#38383f',
+        'gray-light': '#D0D0D2',
+        'gray-mid': '#67676D'
       },
       fontSize: {
         '10': '0.625rem',

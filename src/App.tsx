@@ -8,7 +8,7 @@ import RaceCalender from 'components/RaceCalender';
 import BillBoard from 'components/BillBoard';
 import Store from 'components/Store';
 import Topic from 'components/Topic';
-import Footer from 'components/Fotter';
+import Footer from 'components/Footer';
 
 function App() {
     return (

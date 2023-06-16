@@ -32,8 +32,7 @@ const Store = () => {
         <section className="container mx-auto my-5">
             <div className="flex flex-col md:flex-row gap-2.5">
                 {storeList.map((store) => (
-                    <a
-                        href={store.href}
+                    <div
                         key={store.title}
                         className="link-authentic flex-1 relative p-2.5 pt-5 rounded-md overflow-hidden"
                     >
@@ -57,7 +56,7 @@ const Store = () => {
                                 alt={store.title}
                             />
                         </div>
-                    </a>
+                    </div>
                 ))}
             </div>
         </section>
